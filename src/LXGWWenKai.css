@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'LXGWWenKai';
+    src: url("./fonts/LXGWWenKai-Bold.ttf") format("truetype");
+    font-style:  normal;
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LXGWWenKai';
+    src: url("./fonts/LXGWWenKai-Light.ttf") format("truetype");
+    font-style:  normal;
+    font-weight: lighter;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LXGWWenKai';
+    src: url("./fonts/LXGWWenKai-Regular.ttf") format("truetype");
+    font-style:  normal;
+    font-weight: normal;
+    font-display: swap;
+}
