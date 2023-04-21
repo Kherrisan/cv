@@ -5,6 +5,7 @@ export const content = [
   "./src/**/*.{js,jsx,ts,tsx}",
 ]
 export const theme = {
+  darkMode: 'class',
   safelist: [{
     pattern: /(bg|text|border)-(grey|brown|orange|yellow|green|blue|purple|pink|red)-(.+)/
   }],

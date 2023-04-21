@@ -15,6 +15,7 @@
     "@types/node": "^16.18.24",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
+    "autoprefixer": "^10.4.14",
     "i18next": "^22.4.15",
     "i18next-browser-languagedetector": "^7.0.1",
     "react": "^18.2.0",
