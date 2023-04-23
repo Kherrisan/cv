@@ -136,6 +136,8 @@ function App() {
           {t('publications')}
         </H2>
 
+        <Publication year={2023} title='Privacy-Preserving Data Aggregation in IoTs: A Randomize-then-Shuffle Paradigm' authors='Z Wang, J Tao, D Zou' source='IEEE 97th Vehicular Technology Conference (VTC2023-Spring)' href='https://dl.acm.org/doi/10.1145/3579093' />
+
         <Publication year={2023} title='Towards the Minimal Wait-for Delay for Rechargeable WSNs with Multiple Mobile Chargers' authors='Z Wang, J Tao, Y Xu, Y Gao, D Zou' source='ACM Transactions on Sensor Networks' href='https://dl.acm.org/doi/10.1145/3579093' rank='B' />
 
         <Publication year={2023} title='Joint Optimization between Task Offloading and Resource Allocation in Mobile Edge Computing with multiple UAVs' authors='R Chen, Y Gao, D Zou, X Chen, J Tao' source='Preprint' href='https://www.researchsquare.com/article/rs-2771347/v1' />
