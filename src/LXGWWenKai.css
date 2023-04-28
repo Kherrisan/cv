@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'LXGWWenKai';
-    src: url("https://npm.elemecdn.com/kendrickzou-fonts@1.0.0/LXGWWenKai/LXGWWenKai-Bold.ttf") format("truetype");
+    src: url("https://npm.elemecdn.com/kendrickzou-fonts@1.0.4/LXGWWenKai-Bold.ttf") format("truetype");
     font-style:  normal;
     font-weight: 700;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'LXGWWenKai';
-    src: url("https://npm.elemecdn.com/kendrickzou-fonts@1.0.0/LXGWWenKai/LXGWWenKai-Light.ttf") format("truetype");
+    src: url("https://npm.elemecdn.com/kendrickzou-fonts@1.0.3/LXGWWenKai-Light.ttf") format("truetype");
     font-style:  normal;
     font-weight: 100;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'LXGWWenKai';
-    src: url("https://npm.elemecdn.com/kendrickzou-fonts@1.0.0/LXGWWenKai/LXGWWenKaiScreen.ttf") format("truetype");
+    src: url("https://npm.elemecdn.com/kendrickzou-fonts@1.0.2/LXGWWenKai-Regular.ttf") format("truetype");
     font-style:  normal;
     font-weight: 400;
     font-display: swap;

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './inter.css';
-import './LXGWWenKai.css'
+// import './LXGWWenKai.css'
 import App from './App';
 import './i18n';
 

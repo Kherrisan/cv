@@ -37,7 +37,7 @@ export const theme = {
       },
     },
     fontFamily: {
-      sans: ['Inter', 'LXGWWenKai', ..._fontFamily.sans],
+      sans: ['Inter', 'LXGW WenKai', ..._fontFamily.sans],
     },
   }
 }
