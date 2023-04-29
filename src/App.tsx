@@ -113,11 +113,10 @@ function App() {
             <p className='leading-8'>
               <Trans i18nKey="biographyText">
                 I am currently pursuing 🎓MSc degree at the School of Cyber Science and Technology,{' '}
-                <span className='amber-text underline'>
-                  <a href='https://www.seu.edu.cn'>
+                  <a className='amber-text underline' href='https://www.seu.edu.cn'>
                     Southeast University
                   </a>
-                </span>,
+                ,
                 under the supervision of Prof. Jun Tao.
                 Before that, I received my BSc degree in software engineering from Southeast University.
                 <br />
