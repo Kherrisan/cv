@@ -27,7 +27,7 @@ const CCF = ({ rank, children }: { rank?: 'C' | 'B' | 'A' | 'S' | undefined | nu
       break;
   }
   return (
-    <span className={"p-1 rounded font-bold transition-all duration-150 " + color}>
+    <span className={"p-1 text-sm rounded font-bold transition-all duration-150 " + color}>
       {children}
     </span>
   )
@@ -42,11 +42,11 @@ const H2 = ({ children }: { children: React.ReactNode }) => (
 const Publication = ({ year, title, authors, source, href, rank }: { year: number, title: string, authors: string, source: string, href: string, rank?: 'C' | 'B' | 'A' | 'S' | undefined | null }) => {
   return (
     <div className="grid grid-cols-10 sm:grid-cols-12 pt-4">
-      <div className="col-span-2 text-gray-500/90 dark:text-gray-400/90">
+      <div className="col-span-2 text-gray-500/90 dark:text-gray-400/90 text-sm">
         {year}
       </div>
       <div className="col-span-10">
-        <div className='secondary-text opacity-80'>
+        <div className='secondary-text opacity-80 text-sm'>
           {authors.split(',').map((author, index) => (
             <span key={index} className={author.trim() === 'D Zou' ? 'opacity-100 font-bold' : ''}>
               {author.trim() === 'J Tao' ? author + ' ' : author}
@@ -56,7 +56,7 @@ const Publication = ({ year, title, authors, source, href, rank }: { year: numbe
           ))
           }
         </div>
-        <div className='heading-text font-bold text-lg'>
+        <div className='heading-text font-bold '>
           <a href={href} target='_blank' rel="noreferrer">
             {title}
           </a>
