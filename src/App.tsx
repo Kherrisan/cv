@@ -153,6 +153,7 @@ function App() {
 
           <div className='text-dark-900/80 dark:text-light-900/80 pt-4 mb-auto'>
             <ul className='list-disc list-inside leading-7 font-semibold'>
+              <li>{t('fuzzing')}</li>
               <li>{t('blockchain')} / {t('smart contract')}</li>
               <li>{t('reinforcement learning')}</li>
               <li>{t('mobile crowdsourcing')} / {t('crowdsensing')}</li>

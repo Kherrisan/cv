@@ -37,7 +37,7 @@ export const theme = {
       },
     },
     fontFamily: {
-      sans: ['Inter', 'Noto Sans SC',  'LXGW WenKai', ..._fontFamily.sans],
+      sans: ['Inter', 'Noto Sans SC', ..._fontFamily.sans],
     },
   }
 }
