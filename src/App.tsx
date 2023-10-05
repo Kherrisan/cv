@@ -2,21 +2,24 @@ import avatar from './avatar.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleInfo, faEnvelope, faGraduationCap, faHome } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { Trans, useTranslation } from 'react-i18next';
+
 
 // Color for paper ranks
 // CCF-C green; CCF-B blue; CCF-A purple; TOP orange
 
-const CCF = ({ rank, children }: { rank?: 'C' | 'B' | 'A' | 'S' | undefined | null, children: React.ReactNode }) => {
+const CCF = ({ rank, children }: { rank?: 'C' | 'B' | 'A' | 'S' | 'Q1' | 'Q2' | 'Q3' | undefined | null, children: React.ReactNode }) => {
   let color = '';
   switch (rank) {
     case 'C':
+    case 'Q3':
       color = 'bg-green-600/10 text-green-600 hover:bg-green-600/20';
       break;
     case 'B':
+    case 'Q2':
       color = 'bg-blue-600/10 text-blue-600 hover:bg-blue-600/20';
       break;
     case 'A':
+    case 'Q1':
       color = 'bg-purple-600/10 text-purple-600 hover:bg-purple-600/20';
       break;
     case 'S':
@@ -70,7 +73,6 @@ const Publication = ({ year, title, authors, source, href, rank }: { year: numbe
 }
 
 function App() {
-  const { t } = useTranslation();
 
   return (
     <div className='flex min-h-screen flex-col'>
@@ -85,7 +87,7 @@ function App() {
               alt="avatar" />
 
             <h1 className='py-4 font-extrabold md:text-4xl sm:text-3xl text-2xl'>
-              {t('zoudikai')}
+              Dikai Zou
             </h1>
 
             <div className=''>
@@ -105,58 +107,66 @@ function App() {
           </div>
 
           <H2>
-            {t('biography')}
+          Biography
           </H2>
 
           <div className='text-dark-900/80 dark:text-light-900/80 pt-4'>
 
             <p className='leading-8'>
-              <Trans i18nKey="biographyText">
-                I am currently pursuing 🎓MSc degree at the School of Cyber Science and Technology,{' '}
-                  <a className='amber-text underline' href='https://www.seu.edu.cn'>
-                    Southeast University
-                  </a>
-                ,
-                under the supervision of Prof. Jun Tao.
-                Before that, I received my BSc degree in software engineering from Southeast University.
-                <br />
-                My research interests include{' '}
-                <span className="font-bold">
-                  Reinforcement Learning
-                </span>
-                ,{' '}
-                <span className="font-bold">
-                  Blockchain
-                </span>{' '}and{' '}
-                <span className="font-bold">
-                  Crowdsourcing
-                </span>.
-              </Trans>
+              I am currently pursuing 🎓PhD degree at the {' '}
+              <a className='amber-text underline' href='https://cyber.seu.edu.cn'>
+              School of Cyber Science and Technology
+              </a>
+              , Southeast University,
+              under the supervision of Prof. Jun Tao.
+              Before that, I received my BSc degree in software engineering from Southeast University.
+              <br />
+              My research interests include{' '}
+              <span className="font-bold">
+                Program Analysis
+              </span>
+              {' '}and{' '}
+              <span className="font-bold">
+                Testing
+              </span>{' '}on{' '}
+              <span className="font-bold">
+                Network Security Protocols
+              </span>.
             </p>
           </div>
 
           <H2>
-            {t('publications')}
+            Publications
           </H2>
 
-          <Publication year={2023} title='Benefit-Oriented Task Offloading in UAV-Aided Mobile Edge Computing: An Approximate Solution' authors='Y Gao, J Tao, H Wang, Z Wang, D Zou, Y Xu' source='Peer-to-Peer Networking and Applications' href='https://assets.researchsquare.com/files/rs-1604586/v1_covered.pdf?c=1651681336' rank='C'/>
+          <Publication year={2023} title='IMRSG: Incentive Mechanism Based on Rubinstein-Starr Game for Mobile CrowdSensing' authors='H Wang, J Tao, D Chi, Y Gao, Z Wang, D Zou, Y Xu' source='IEEE Transactions on Vehicular Technology' href='https://ieeexplore.ieee.org/abstract/document/10261277' rank='Q1'/>
 
+          <Publication year={2023} title='Benefit-Oriented Task Offloading in UAV-Aided Mobile Edge Computing: An Approximate Solution' authors='Y Gao, J Tao, H Wang, Z Wang, D Zou, Y Xu' source='Peer-to-Peer Networking and Applications' href='https://link.springer.com/article/10.1007/s12083-023-01499-5' rank='C'/>
+          
           <Publication year={2023} title='Privacy-Preserving Data Aggregation in IoTs: A Randomize-then-Shuffle Paradigm' authors='Z Wang, J Tao, D Zou' source='IEEE 97th Vehicular Technology Conference (VTC2023-Spring)' href='https://dl.acm.org/doi/10.1145/3579093' />
 
           <Publication year={2023} title='Towards the Minimal Wait-for Delay for Rechargeable WSNs with Multiple Mobile Chargers' authors='Z Wang, J Tao, Y Xu, Y Gao, D Zou' source='ACM Transactions on Sensor Networks' href='https://dl.acm.org/doi/10.1145/3579093' rank='B' />
 
-          <Publication year={2023} title='Joint Optimization between Task Offloading and Resource Allocation in Mobile Edge Computing with multiple UAVs' authors='R Chen, Y Gao, D Zou, X Chen, J Tao' source='Preprint' href='https://www.researchsquare.com/article/rs-2771347/v1' />
+          {/* <Publication year={2023} title='Joint Optimization between Task Offloading and Resource Allocation in Mobile Edge Computing with multiple UAVs' authors='R Chen, Y Gao, D Zou, X Chen, J Tao' source='Preprint' href='https://www.researchsquare.com/article/rs-2771347/v1' /> */}
 
           <H2>
-            {t('interests')}
+           Interests
           </H2>
 
           <div className='text-dark-900/80 dark:text-light-900/80 pt-4 mb-auto'>
             <ul className='list-disc list-inside leading-7 font-semibold'>
-              <li>{t('fuzzing')}</li>
-              <li>{t('blockchain')} / {t('smart contract')}</li>
-              <li>{t('reinforcement learning')}</li>
-              <li>{t('mobile crowdsourcing')} / {t('crowdsensing')}</li>
+              <li>🔬 Program Analysis / 🧪 Testing:{' '}
+                <span className="font-normal">
+                  Fuzzing, (Dynamic) Symbolic Execution, Static Analysis...
+                </span>
+              </li>
+              <li>
+                🌐 Security / 💡 IoT Protocol:{' '}
+                <span className="font-normal">
+                   QUIC, DTLS, MQTT...
+                </span>
+              </li>
+              <li>🤖 Reinforcement Learning</li>
             </ul>
           </div>
 
@@ -165,7 +175,9 @@ function App() {
 
       <footer className='primary-text p-4 text-center text-xs mt-12 mb-8'>
         <div>
-          备案号xxxxxxxx
+          <a href='https://beian.miit.gov.cn/#/Integrated/index'>
+            苏ICP备2023016271号
+          </a>
         </div>
       </footer>
     </div>
