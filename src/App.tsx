@@ -42,7 +42,7 @@ const H2 = ({ children }: { children: React.ReactNode }) => (
   </h2>
 )
 
-const Publication = ({ year, title, authors, source, href, rank }: { year: number, title: string, authors: string, source: string, href: string, rank?: 'C' | 'B' | 'A' | 'S' | undefined | null }) => {
+const Publication = ({ year, title, authors, source, href, rank }: { year: number, title: string, authors: string, source: string, href: string, rank?: 'C' | 'B' | 'A' | 'S' | 'Q1' | 'Q2' | 'Q3' | undefined | null }) => {
   return (
     <div className="grid grid-cols-10 sm:grid-cols-12 pt-4">
       <div className="col-span-2 text-gray-500/90 dark:text-gray-400/90 text-sm">
