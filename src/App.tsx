@@ -139,6 +139,8 @@ function App() {
             Publications
           </H2>
 
+          <Publication year={2023} title='A Preference-Driven Malicious Platform Detection Mechanism for Users in Mobile Crowdsensing' authors='H Wang, J Tao, D Chi, Y Gao, D Zou, Y Xu' source='IEEE Transactions on Information Forensics & Security' href='' rank='A'/>
+
           <Publication year={2023} title='IMRSG: Incentive Mechanism Based on Rubinstein-Starr Game for Mobile CrowdSensing' authors='H Wang, J Tao, D Chi, Y Gao, Z Wang, D Zou, Y Xu' source='IEEE Transactions on Vehicular Technology' href='https://ieeexplore.ieee.org/abstract/document/10261277' rank='Q1'/>
 
           <Publication year={2023} title='Benefit-Oriented Task Offloading in UAV-Aided Mobile Edge Computing: An Approximate Solution' authors='Y Gao, J Tao, H Wang, Z Wang, D Zou, Y Xu' source='Peer-to-Peer Networking and Applications' href='https://link.springer.com/article/10.1007/s12083-023-01499-5' rank='C'/>
