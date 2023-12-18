@@ -139,6 +139,8 @@ function App() {
             Publications
           </H2>
 
+          <Publication year={2023} title='Semantics-aware Location Privacy Preserving: A Differential Privacy Approach' authors='D Zou, J Tao, Z Wang' source='Wireless Communications and Mobile Computing' href='' rank='C'/>
+
           <Publication year={2023} title='A Preference-Driven Malicious Platform Detection Mechanism for Users in Mobile Crowdsensing' authors='H Wang, J Tao, D Chi, Y Gao, D Zou, Y Xu' source='IEEE Transactions on Information Forensics & Security' href='' rank='A'/>
 
           <Publication year={2023} title='IMRSG: Incentive Mechanism Based on Rubinstein-Starr Game for Mobile CrowdSensing' authors='H Wang, J Tao, D Chi, Y Gao, Z Wang, D Zou, Y Xu' source='IEEE Transactions on Vehicular Technology' href='https://ieeexplore.ieee.org/abstract/document/10261277' rank='Q1'/>
