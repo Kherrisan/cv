@@ -30,7 +30,7 @@ const CCF = ({ rank, children }: { rank?: 'C' | 'B' | 'A' | 'S' | 'Q1' | 'Q2' | 
       break;
   }
   return (
-    <span className={"p-1 text-sm rounded font-bold transition-all duration-150 " + color}>
+    <span className={"p-1 rounded font-bold transition-all duration-150 " + color}>
       {children}
     </span>
   )
@@ -45,11 +45,11 @@ const H2 = ({ children }: { children: React.ReactNode }) => (
 const Publication = ({ year, title, authors, source, href, rank }: { year: number, title: string, authors: string, source: string, href: string, rank?: 'C' | 'B' | 'A' | 'S' | 'Q1' | 'Q2' | 'Q3' | undefined | null }) => {
   return (
     <div className="grid grid-cols-10 sm:grid-cols-12 pt-4">
-      <div className="col-span-2 text-gray-500/90 dark:text-gray-400/90 text-sm">
+      <div className="col-span-2 text-gray-500/90 dark:text-gray-400/90">
         {year}
       </div>
       <div className="col-span-10">
-        <div className='secondary-text opacity-80 text-sm'>
+        <div className='secondary-text opacity-80'>
           {authors.split(',').map((author, index) => (
             <span key={index} className={author.trim() === 'D Zou' ? 'opacity-100 font-bold' : ''}>
               {author.trim() === 'J Tao' ? author + ' ' : author}
@@ -59,7 +59,7 @@ const Publication = ({ year, title, authors, source, href, rank }: { year: numbe
           ))
           }
         </div>
-        <div className='heading-text font-bold '>
+        <div className='heading-text font-bold text-lg'>
           <a href={href} target='_blank' rel="noreferrer">
             {title}
           </a>
@@ -86,7 +86,7 @@ function App() {
               height={128}
               alt="avatar" />
 
-            <h1 className='py-4 font-extrabold md:text-4xl sm:text-3xl text-2xl'>
+            <h1 className='py-4 font-extrabold md:text-5xl sm:text-4xl text-3xl'>
               Dikai Zou
             </h1>
 
@@ -112,7 +112,7 @@ function App() {
 
           <div className='text-dark-900/80 dark:text-light-900/80 pt-4'>
 
-            <p className='leading-8'>
+            <p className='leading-8 text-lg'>
               I am currently pursuing 🎓PhD degree at the {' '}
               <a className='amber-text underline' href='https://cyber.seu.edu.cn'>
               School of Cyber Science and Technology
@@ -157,7 +157,7 @@ function App() {
            Interests
           </H2>
 
-          <div className='text-dark-900/80 dark:text-light-900/80 pt-4 mb-auto'>
+          <div className='text-dark-900/80 dark:text-light-900/80 pt-4 mb-auto text-lg'>
             <ul className='list-disc list-inside leading-7 font-semibold'>
               <li>🔬 Program Analysis / 🧪 Testing:{' '}
                 <span className="font-normal">
