@@ -138,9 +138,9 @@ function App() {
           <H2>
             Publications
           </H2>
-          <Publication year={2025} title='Semantics-aware Location Privacy Preserving: A Differential Privacy Approach' authors='D Zou, J Tao, Z Wang' source='Computers & Security' href='' rank='B'/>
+          <Publication year={2025} title='Semantics-aware Location Privacy Preserving: A Differential Privacy Approach' authors='D Zou, J Tao, Z Wang' source='Computers & Security' href='https://www.sciencedirect.com/science/article/pii/S0167404825000914' rank='B'/>
 
-          <Publication year={2024} title='An Accurate and Lightweight Intrusion Detection Model Deployed on Edge Network Devices' authors='Y Ao, J Tao, D Zou, W Sun, L Yu' source='2024 International Joint Conference on Neural Networks (IJCNN)' href='https://ieeexplore.ieee.org/document/10651457' rank='A'/>
+          <Publication year={2024} title='An Accurate and Lightweight Intrusion Detection Model Deployed on Edge Network Devices' authors='Y Ao, J Tao, D Zou, W Sun, L Yu' source='2024 International Joint Conference on Neural Networks (IJCNN)' href='https://ieeexplore.ieee.org/document/10651457' rank='C'/>
 
           <Publication year={2024} title='A Preference-Driven Malicious Platform Detection Mechanism for Users in Mobile Crowdsensing' authors='H Wang, J Tao, D Chi, Y Gao, D Zou, Y Xu' source='IEEE Transactions on Information Forensics & Security' href='https://dl.acm.org/doi/10.1109/TIFS.2024.3352412' rank='A'/>
 
