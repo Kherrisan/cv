@@ -138,6 +138,9 @@ function App() {
           <H2>
             Publications
           </H2>
+
+          <Publication year={2026} title='SpringFuzz: Comprehensive Grey-Box Fuzzing of Spring-Based Web Applications' authors='D Zou, J Tao, R Li, K Zhou, H Wu' source='Computers & Security' href='https://doi.org/10.1016/j.cose.2026.104865' rank='B'/>
+          
           <Publication year={2025} title='Semantics-aware Location Privacy Preserving: A Differential Privacy Approach' authors='D Zou, J Tao, Z Wang' source='Computers & Security' href='https://www.sciencedirect.com/science/article/pii/S0167404825000914' rank='B'/>
 
           <Publication year={2024} title='An Accurate and Lightweight Intrusion Detection Model Deployed on Edge Network Devices' authors='Y Ao, J Tao, D Zou, W Sun, L Yu' source='2024 International Joint Conference on Neural Networks (IJCNN)' href='https://ieeexplore.ieee.org/document/10651457' rank='C'/>
